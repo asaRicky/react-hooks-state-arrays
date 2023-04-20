@@ -23,4 +23,10 @@ function SpicyFoodList() {
   );
 }
 
+function handleAddFood() {
+  const newFood = getNewSpicyFood();
+  const newFoodArray = [...foods, newFood];
+  setFoods(newFoodArray);
+}
+
 export default SpicyFoodList;
