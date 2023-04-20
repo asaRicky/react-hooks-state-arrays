@@ -6,6 +6,8 @@ function SpicyFoodList() {
 
   function handleAddFood() {
     const newFood = getNewRandomSpicyFood();
+    const newFoodArray = [...foods, newFood];
+    setFoods(newFoodArray);
     console.log(newFood);
   }
 
@@ -23,10 +25,6 @@ function SpicyFoodList() {
   );
 }
 
-function handleAddFood() {
-  const newFood = getNewSpicyFood();
-  const newFoodArray = [...foods, newFood];
-  setFoods(newFoodArray);
-}
+
 
 export default SpicyFoodList;
